@@ -9,13 +9,13 @@ var url = "http://logger.io.com";
 
 class Logger extends EventEmitter{
 
-    log (message) {
+    log (message) {                     // when we define a function inside a class we don't need to write function keyword
     
         //Sending http request
         console.log(message);
         
         // Raise an event
-        this.emit("messageLogged", {uid: 123, url: "http://google.com"})
+        this.emit("messageLogged", {uid: 123, url: "http://google.com"}) // wmitter.emit is replaced with this.emit
     }
 }
 

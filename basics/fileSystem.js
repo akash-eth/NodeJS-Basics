@@ -1,6 +1,7 @@
 const fs = require('fs');
 
-// const files = fs.readdirSync('./');
+// const files = fs.readdirSync('./'); This a synchrous function just for simplicity, But node has Async to handle multiple clients.
+                                                // So, always prefer Async functions !!
 // console.log(files);
 
 // fs.readdir('./', function(err,files) {
